@@ -30,3 +30,19 @@ button {
     max-width: 300px;
     padding: 10px;
 }
+
+.sucess-mensage {
+    background-color: green;
+    padding: 16px;
+    color: #fff;
+    display: none;
+}
+
+.error-mensage {
+    font-size: 12px;
+    padding: 8px;
+    background-color: red;
+    color: #fff;
+    margin-bottom: 8px;
+    display: none;
+}
