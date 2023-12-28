@@ -1,5 +1,6 @@
 const form = document.getElementById('form-deposito');
 const nomeBeneficiario = document.getElementById('nome-beneficiario');
+let formValido = false;
 
 function validaNome (nomeCompleto) {
     const nomeComArray = nomeCompleto.split(' ');
@@ -7,7 +8,7 @@ function validaNome (nomeCompleto) {
 }
 
 form.addEventListener('submit', function(e) {
-    let formValido = false;
+
     e.preventDefault();
 
     const numeroContaBeneficiario = document.getElementById('numero-conta');
@@ -31,5 +32,14 @@ form.addEventListener('submit', function(e) {
 })
 
 nomeBeneficiario.addEventListener('change', function(e) {
-    console.log(e); 
+    console.log(e.target.value); 
+    formValido = validaNome(e.target.value);
+
+    if (!formValido) {
+        nomeBeneficiario.classList.add('error');
+        nomeBeneficiario.style.border = '1px solid red';
+    } else {
+        nomeBeneficiario.classList.remove('error');
+        document.querySelector('.error-mensage').style.display = 'none';
+    }
 })
