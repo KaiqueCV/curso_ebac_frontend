@@ -195,23 +195,23 @@
         <div class="container">
             <h2>Entre em Contato</h2>
             <form>
-                <div>
+                <div class="form-campo">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome">
                 </div>
-                <div>
+                <div class="form-campo">
                     <label for="telefone">Telefone:</label>
                     <input type="tel" id="telefone">
                 </div>
-                <div>
+                <div class="form-campo">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email">
                 </div>
-                <div>
+                <div class="form-campo">
                     <label for="veiculo-interesse">Veículo de interesse:</label>
                     <input type="text" id="veiculo-interesse">
                 </div>
-                <div>
+                <div class="form-campo">
                     <label for="Mensagem">Mensagem:</label>
                     <textarea id="mensagem"></textarea>
                 </div>
@@ -219,11 +219,33 @@
             </form>
         </div>
     </section>
+    <footer>
+        <div class="container container-flex">
+            <p>2024 &copy; EBAC Motors - Todos os direitos reservados.</p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
+    <script src="./js/jquery.mask.min.js"></script>    
     <script>
         $(document).ready(function() { 
             $('#carousel-imagens').slick({
@@ -233,6 +255,8 @@
             $('.menu-hamburger').click(function() {
                 $('nav').slideToggle();
             })
+
+            $('#telefone').mask('(00) 00000-0000')
         })
     </script>
 </body>
