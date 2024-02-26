@@ -12,4 +12,4 @@ Estou aberto a contribuições e feedback construtivo. Se você tiver sugestões
 
 # Agradecimentos
 Quero expressar minha gratidão à EBAC e aos instrutores do curso por fornecerem uma educação excepcional e desafiadora. Também agradeço à comunidade de desenvolvedores que inspira constantemente meu crescimento.
-Espero que você aproveite explorando estes projetos tanto quanto eu aproveitei construindo-os!
+Espero que você aproveite explorando estes projetos tanto quanto eu aproveitei construindo-os.
