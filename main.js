@@ -26,6 +26,6 @@ const myCat = new Cat("Whiskers");
 const unknownAnimal = new Animal("Unknown");
 
 
-myDog.makeSound(); // Woof woof!
-myCat.makeSound(); // Meow!
-unknownAnimal.makeSound(); // Error: Method 'makeSound' must be implemented.
+myDog.makeSound();
+myCat.makeSound();
+unknownAnimal.makeSound(); 
